@@ -15,7 +15,7 @@ public class PersonajeFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         RecyclerView personajeRecycler = (RecyclerView) inflater.inflate(R.layout.fragment_personaje, container, false);
 
-        String[] nombrePersonajes = new String[Personaje.personajes.length];
+        int[] nombrePersonajes = new int[Personaje.personajes.length];
         for (int i = 0; i < nombrePersonajes.length; i++) {
             nombrePersonajes[i] = Personaje.personajes[i].getNombre();
         }
@@ -25,12 +25,12 @@ public class PersonajeFragment extends Fragment {
             imagenPersonajes[i] = Personaje.personajes[i].getImageResourceID();
         }
 
-        String[] descripcionPersonajes = new String[Personaje.personajes.length];
+        int[] descripcionPersonajes = new int[Personaje.personajes.length];
         for (int i = 0; i < descripcionPersonajes.length; i++) {
             descripcionPersonajes[i] = Personaje.personajes[i].getDescripcion();
         }
 
-        String[] habilidadPersonajes = new String[Personaje.personajes.length];
+        int[] habilidadPersonajes = new int[Personaje.personajes.length];
         for (int i = 0; i < habilidadPersonajes.length; i++) {
             habilidadPersonajes[i] = Personaje.personajes[i].getHabilidades();
         }

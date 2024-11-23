@@ -56,10 +56,10 @@ public class MainActivity extends AppCompatActivity {
     private void showAboutDialog() {
         // Crear un AlertDialog
         new AlertDialog.Builder(this)
-                .setTitle("Acerca de")
+                .setTitle(R.string.acercaDe)
                 .setMessage(R.string.acercaDeMensaje)
                 .setIcon(R.mipmap.ic_launcher) // Reemplaza con el icono de tu app
-                .setPositiveButton("OK", null)
+                .setPositiveButton(R.string.ok, null)
                 .show();
     }
 }

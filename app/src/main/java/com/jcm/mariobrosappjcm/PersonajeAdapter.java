@@ -10,17 +10,17 @@ import androidx.core.content.ContextCompat;
 import androidx.recyclerview.widget.RecyclerView;
 
 public class PersonajeAdapter extends RecyclerView.Adapter<PersonajeAdapter.ViewHolder> {
-    private String[] nombres;
+    private int[] nombres;
     private int[] imageIds;
-    private String[] descripciones;
-    private String[] habilidades;
+    private int[] descripciones;
+    private int[] habilidades;
     private Listener listener;
 
     interface Listener {
         void onClick(int position);
     }
 
-    public PersonajeAdapter(String[] nombres, int[] imageIds, String[] descripciones, String[] habilidades) {
+    public PersonajeAdapter(int[] nombres, int[] imageIds, int[] descripciones, int[] habilidades) {
         this.nombres = nombres;
         this.imageIds = imageIds;
         this.descripciones = descripciones;
@@ -44,7 +44,6 @@ public class PersonajeAdapter extends RecyclerView.Adapter<PersonajeAdapter.View
         ImageView imageView = (ImageView) cardView.findViewById(R.id.info_image);
         Drawable drawable = ContextCompat.getDrawable(cardView.getContext(), imageIds[position]);
         imageView.setImageDrawable(drawable);
-        imageView.setContentDescription(nombres[position]);
 
         TextView textView = (TextView) cardView.findViewById(R.id.info_text);
         textView.setText(nombres[position]);

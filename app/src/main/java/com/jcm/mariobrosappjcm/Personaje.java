@@ -1,20 +1,20 @@
 package com.jcm.mariobrosappjcm;
 
 public class Personaje {
-    private String nombre;
-    private String descripcion;
-    private String habilidades;
+    private int nombre;
+    private int descripcion;
+    private int habilidades;
     private int imageResourceID;
 
     public static final Personaje[] personajes = {
-            new Personaje("Mario", R.drawable.mario, "Personaje principal.", "Gran saltador.\nUsa potenciadores como la flor de fuego o estrella." ),
-            new Personaje("Luigi",R.drawable.luigi, "Hermano de Mario.", "Salta más alto y más lejos que Mario.\nExperto en cazar fantasmas."),
-            new Personaje("Peach",R.drawable.princesa, "Gobernante del Reino Champiñón.", "Flota gracias a su vestido.\nDispone de habilidades mágicas."),
-            new Personaje("Toad",R.drawable.seta, "Habitante del Reino Champiñón.", "Muy rápido.\nExcelente recolector de objetos."),
-            new Personaje("Yoshi",R.drawable.dino, "Dinosaurio amistoso.", "Atrapa enemigos con su lengua.\nGran saltador.")
+            new Personaje(R.string.marioName, R.drawable.mario, R.string.marioDescription, R.string.marioAbilities ),
+            new Personaje(R.string.luigiName,R.drawable.luigi, R.string.luigiDescription, R.string.luigiAbilities),
+            new Personaje(R.string.peachName,R.drawable.princesa, R.string.peachDescription, R.string.peachAbilities),
+            new Personaje(R.string.luigiName,R.drawable.seta, R.string.toadDescription, R.string.toadAbilities),
+            new Personaje(R.string.yoshiName,R.drawable.dino, R.string.yoshiDescription, R.string.yoshiAbilities)
     };
 
-    private Personaje(String nombre, int imageResourceID, String descripcion, String habilidades) {
+    private Personaje(int nombre, int imageResourceID, int descripcion, int habilidades) {
         this. nombre = nombre;
         this. imageResourceID = imageResourceID;
         this.descripcion = descripcion;
@@ -23,7 +23,7 @@ public class Personaje {
 
     // GETTERS
 
-    public String getNombre() {
+    public int getNombre() {
         return nombre;
     }
 
@@ -31,11 +31,11 @@ public class Personaje {
         return imageResourceID;
     }
 
-    public String getDescripcion() {
+    public int getDescripcion() {
         return descripcion;
     }
 
-    public String getHabilidades() {
+    public int getHabilidades() {
         return habilidades;
     }
 }

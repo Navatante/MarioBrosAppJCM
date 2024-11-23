@@ -1,2 +1,29 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources></resources>
+<resources>
+    <string name="app_name">MarioBrosAppJCM</string>
+    <string name="characterDetailsTitle">Character details</string>
+    <string name="ok">Ok</string>
+    <string name="acercaDe">About...</string>
+    <string name="acercaDeMensaje">App developed by Jonatan Carbonell Martinez. Version 1.0.</string>
+
+    <!-- MARIO -->
+    <string name="marioName">Mario</string>
+    <string name="marioDescription">Main character.</string>
+    <string name="marioAbilities">Great jumper\nUses power-ups like the fire flower or star.</string>
+    <!-- LUIGI -->
+    <string name="luigiName">Luigi</string>
+    <string name="luigiDescription">Marios brother.</string>
+    <string name="luigiAbilities">Jumps higher and farther than Mario.\nExpert at ghost hunting.</string>
+    <!-- PEACH -->
+    <string name="peachName">Peach</string>
+    <string name="peachDescription">Ruler of the Mushroom Kingdom.</string>
+    <string name="peachAbilities">Floats thanks to her dress.\nHas magical abilities.</string>
+    <!-- TOAD -->
+    <string name="toadName">Toad</string>
+    <string name="toadDescription">Inhabitant of the Mushroom Kingdom.</string>
+    <string name="toadAbilities">Very fast.\nExcellent at collecting items.</string>
+    <!-- YOSHI -->
+    <string name="yoshiName">Yoshi</string>
+    <string name="yoshiDescription">Friendly dinosaur.</string>
+    <string name="yoshiAbilities">Catches enemies with his tongue.\nGreat jumper.</string>
+
+</resources>

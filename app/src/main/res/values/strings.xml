@@ -1,10 +1,29 @@
 <resources>
     <string name="app_name">MarioBrosAppJCM</string>
-    <!-- Strings used for fragments for navigation -->
-    <string name="first_fragment_label">First Fragment</string>
-    <string name="second_fragment_label">Second Fragment</string>
-    <string name="next">Next</string>
-    <string name="previous">Previous</string>
+    <string name="characterDetailsTitle">Detalles del personaje</string>
+    <string name="ok">Aceptar</string>
     <string name="acercaDe">Acerca de...</string>
-    <string name="acercaDeMensaje">"Aplicación desarrollada por Jonatan Carbonell Martinez. Versión 1.0."</string>
+    <string name="acercaDeMensaje">Aplicación desarrollada por Jonatan Carbonell Martinez. Versión 1.0.</string>
+
+    <!-- MARIO -->
+    <string name="marioName">Mario</string>
+    <string name="marioDescription">Personaje principal.</string>
+    <string name="marioAbilities">Gran saltador.\nUsa potenciadores como la flor de fuego o estrella.</string>
+    <!-- LUIGI -->
+    <string name="luigiName">Luigi</string>
+    <string name="luigiDescription">Hermano de Mario.</string>
+    <string name="luigiAbilities">Salta más alto y más lejos que Mario.\nExperto en cazar fantasmas.</string>
+    <!-- PEACH -->
+    <string name="peachName">Peach</string>
+    <string name="peachDescription">Gobernante del Reino Champiñón.</string>
+    <string name="peachAbilities">Flota gracias a su vestido.\nDispone de habilidades mágicas.</string>
+    <!-- TOAD -->
+    <string name="toadName">Toad</string>
+    <string name="toadDescription">Habitante del Reino Champiñón.</string>
+    <string name="toadAbilities">Muy rápido.\nExcelente recolector de objetos.</string>
+    <!-- YOSHI -->
+    <string name="yoshiName">Yoshi</string>
+    <string name="yoshiDescription">Dinosaurio amistoso.</string>
+    <string name="yoshiAbilities">Atrapa enemigos con su lengua.\nGran saltador.</string>
+
 </resources>
