@@ -1,35 +1,33 @@
 <resources>
     <string name="app_name">MarioBrosAppJCM</string>
-    <string name="characterDetailsTitle">Detalles del personaje</string>
-    <string name="ok">Aceptar</string>
-    <string name="acercaDe">Acerca de...</string>
-    <string name="acercaDeMensaje">Aplicación desarrollada por Jonatan Carbonell Martinez. Versión 1.0.</string>
-    <string name="snackBarWelcome">Bienvenidos al mundo de Mario.</string>>
-    <string name="toastCharSelected">Se ha seleccionado a %1$s.</string>
-    <string name="homeItem">Inicio</string>
-    <string name="settingsItem">Ajustes</string>
-    <string name="languageItem">Idioma</string>
-    <string name="languageChanged">Idioma cambiado</string>
+    <string name="characterDetailsTitle">Character details</string>
+    <string name="ok">Ok</string>
+    <string name="acercaDe">About...</string>
+    <string name="acercaDeMensaje">App developed by Jonatan Carbonell Martinez. Version 1.0.</string>
+    <string name="snackBarWelcome">Welcome to Marios World.</string>
+    <string name="toastCharSelected">%1$s has been selected.</string>
+    <string name="homeItem">Home</string>
+    <string name="settingsItem">Settings</string>
+    <string name="languageItem">Language</string>
 
     <!-- MARIO -->
     <string name="marioName">Mario</string>
-    <string name="marioDescription">Personaje principal.</string>
-    <string name="marioAbilities">Gran saltador.\nUsa potenciadores como la flor de fuego o estrella.</string>
+    <string name="marioDescription">Main character.</string>
+    <string name="marioAbilities">Great jumper\nUses power-ups like the fire flower or star.</string>
     <!-- LUIGI -->
     <string name="luigiName">Luigi</string>
-    <string name="luigiDescription">Hermano de Mario.</string>
-    <string name="luigiAbilities">Salta más alto y más lejos que Mario.\nExperto en cazar fantasmas.</string>
+    <string name="luigiDescription">Marios brother.</string>
+    <string name="luigiAbilities">Jumps higher and farther than Mario.\nExpert at ghost hunting.</string>
     <!-- PEACH -->
     <string name="peachName">Peach</string>
-    <string name="peachDescription">Gobernante del Reino Champiñón.</string>
-    <string name="peachAbilities">Flota gracias a su vestido.\nDispone de habilidades mágicas.</string>
+    <string name="peachDescription">Ruler of the Mushroom Kingdom.</string>
+    <string name="peachAbilities">Floats thanks to her dress.\nHas magical abilities.</string>
     <!-- TOAD -->
     <string name="toadName">Toad</string>
-    <string name="toadDescription">Habitante del Reino Champiñón.</string>
-    <string name="toadAbilities">Muy rápido.\nExcelente recolector de objetos.</string>
+    <string name="toadDescription">Inhabitant of the Mushroom Kingdom.</string>
+    <string name="toadAbilities">Very fast.\nExcellent at collecting items.</string>
     <!-- YOSHI -->
     <string name="yoshiName">Yoshi</string>
-    <string name="yoshiDescription">Dinosaurio amistoso.</string>
-    <string name="yoshiAbilities">Atrapa enemigos con su lengua.\nGran saltador.</string>
-
+    <string name="yoshiDescription">Friendly dinosaur.</string>
+    <string name="yoshiAbilities">Catches enemies with his tongue.\nGreat jumper.</string>
 </resources>

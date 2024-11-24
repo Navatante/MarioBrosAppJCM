@@ -8,21 +8,16 @@
     tools:context=".SettingActivity"
     tools:ignore="ExtraText">
 
-    <!-- SwitchCompat for changing language -->
     <androidx.appcompat.widget.SwitchCompat
         android:id="@+id/language_switch"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Español / English"
+        android:text="English / Español"
         android:textColor="@color/gray2"
-        android:checked="true"
         app:layout_constraintTop_toTopOf="parent"
-        tools:ignore="MissingConstraints" />  <!-- Set the position from the top -->
-    app:layout_constraintStart_toStartOf="parent"  <!-- Align to the start (left) -->
-    app:layout_constraintEnd_toEndOf="parent"  <!-- Align to the end (right) -->
-    android:layout_marginTop="100dp"  <!-- Margin from the top -->
-    android:layout_marginStart="24dp"  <!-- Start margin for left alignment -->
-    android:layout_marginEnd="24dp"  <!-- End margin for right alignment -->
-    />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="100dp" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
