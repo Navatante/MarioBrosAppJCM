@@ -1,9 +1,7 @@
-<?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <style name="miEstilo">
+    <style name="miEstilo" parent="Theme.MaterialComponents.DayNight.NoActionBar">
         <item name="android:textColor">@color/gray3</item>
         <item name="cardBackgroundColor">@color/gray2</item>
-
-
+        <item name="android:windowBackground">@color/gray5</item>
     </style>
 </resources>
