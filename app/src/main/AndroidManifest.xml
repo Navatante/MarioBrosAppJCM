@@ -36,6 +36,11 @@
             android:parentActivityName=".MainActivity"
             android:exported="false"
             android:theme="@style/Theme.MarioBrosAppJCM" />
+
+        <!-- SettingsActivity -->
+        <activity
+            android:name=".SettingActivity"
+            android:exported="true" />
     </application>
 
 </manifest>

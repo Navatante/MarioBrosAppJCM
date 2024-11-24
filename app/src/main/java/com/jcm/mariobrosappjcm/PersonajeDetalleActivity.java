@@ -10,42 +10,47 @@ import androidx.appcompat.widget.Toolbar;
 import androidx.core.content.ContextCompat;
 
 
+/**
+ * PersonajeDetalleActivity muestra los detalles de un personaje seleccionado.
+ */
 public class PersonajeDetalleActivity extends AppCompatActivity {
 
+    // Clave extra para pasar el ID del personaje a través del Intent.
     public static final String EXTRA_PERSONAJE_ID = "personajeId";
-    
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_personaje_detalle);
 
-
-
-        // Ponemos el toolbar como la app bar del activity
-        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
+        // Configurar Toolbar como la barra de herramientas de la actividad.
+        Toolbar toolbar = findViewById(R.id.toolbar);
         toolbar.setTitle(R.string.characterDetailsTitle);
         setSupportActionBar(toolbar);
         ActionBar actionBar = getSupportActionBar();
         actionBar.setDisplayHomeAsUpEnabled(true);
 
-        // Mostrar detalles del personaje
-        int personjaeId = (Integer)getIntent().getExtras().get(EXTRA_PERSONAJE_ID); // Desde el intent, coge el personaje que el usuario elija.
+        // Mostrar detalles del personaje seleccionado.
+        int personajeId = getIntent().getExtras().getInt(EXTRA_PERSONAJE_ID);
 
-        int personajeNombre = Personaje.personajes[personjaeId].getNombre();
-        TextView textViewNombre = (TextView) findViewById(R.id.personaje_texto);
+        // Configurar el nombre del personaje.
+        int personajeNombre = Personaje.personajes[personajeId].getNombre();
+        TextView textViewNombre = findViewById(R.id.personaje_texto);
         textViewNombre.setText(personajeNombre);
 
-        int personajeImagen = Personaje.personajes[personjaeId].getImageResourceID();
-        ImageView imageView = (ImageView) findViewById((R.id.personage_imagen));
+        // Configurar la imagen del personaje.
+        int personajeImagen = Personaje.personajes[personajeId].getImageResourceID();
+        ImageView imageView = findViewById(R.id.personage_imagen);
         imageView.setImageDrawable(ContextCompat.getDrawable(this, personajeImagen));
 
-
-        int personajeDescripcion = Personaje.personajes[personjaeId].getDescripcion();
-        TextView textViewDescripcion = findViewById((R.id.personaje_descripcion));
+        // Configurar la descripción del personaje.
+        int personajeDescripcion = Personaje.personajes[personajeId].getDescripcion();
+        TextView textViewDescripcion = findViewById(R.id.personaje_descripcion);
         textViewDescripcion.setText(personajeDescripcion);
 
-        int personajeHabilidades = Personaje.personajes[personjaeId].getHabilidades();
-        TextView textViewHabilidades = findViewById((R.id.personaje_habilidades));
+        // Configurar las habilidades del personaje.
+        int personajeHabilidades = Personaje.personajes[personajeId].getHabilidades();
+        TextView textViewHabilidades = findViewById(R.id.personaje_habilidades);
         textViewHabilidades.setText(personajeHabilidades);
     }
 }

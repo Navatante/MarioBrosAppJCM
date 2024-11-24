@@ -6,6 +6,10 @@
     <string name="acercaDeMensaje">App developed by Jonatan Carbonell Martinez. Version 1.0.</string>
     <string name="snackBarWelcome">Welcome to Marios World.</string>
     <string name="toastCharSelected">%1$s has been selected.</string>
+    <string name="homeItem">Home</string>
+    <string name="settingsItem">Settings</string>
+    <string name="languageItem">Language</string>
+    <string name="languageChanged">Language changed</string>
 
     <!-- MARIO -->
     <string name="marioName">Mario</string>
