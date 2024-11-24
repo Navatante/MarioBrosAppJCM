@@ -9,6 +9,8 @@ import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.FragmentTransaction;
 
+import com.google.android.material.snackbar.Snackbar;
+
 public class MainActivity extends AppCompatActivity {
 
     @Override
@@ -29,6 +31,8 @@ public class MainActivity extends AppCompatActivity {
             transaction.add(R.id.fragment_container, fragment);
             transaction.commit();
         }
+
+
     }
 
     @Override

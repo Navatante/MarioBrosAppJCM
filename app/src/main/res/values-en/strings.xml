@@ -4,6 +4,8 @@
     <string name="ok">Ok</string>
     <string name="acercaDe">About...</string>
     <string name="acercaDeMensaje">App developed by Jonatan Carbonell Martinez. Version 1.0.</string>
+    <string name="snackBarWelcome">Welcome to Marios World.</string>
+    <string name="toastCharSelected">%1$s has been selected.</string>
 
     <!-- MARIO -->
     <string name="marioName">Mario</string>

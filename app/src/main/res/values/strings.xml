@@ -4,6 +4,8 @@
     <string name="ok">Aceptar</string>
     <string name="acercaDe">Acerca de...</string>
     <string name="acercaDeMensaje">Aplicación desarrollada por Jonatan Carbonell Martinez. Versión 1.0.</string>
+    <string name="snackBarWelcome">Bienvenidos al mundo de Mario.</string>>
+    <string name="toastCharSelected">Se ha seleccionado a %1$s.</string>
 
     <!-- MARIO -->
     <string name="marioName">Mario</string>

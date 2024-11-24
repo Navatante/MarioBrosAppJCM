@@ -8,12 +8,21 @@ import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 import android.content.Intent;
+import android.widget.Toast;
+
+import com.google.android.material.snackbar.Snackbar;
 
 public class PersonajeFragment extends Fragment {
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
+
         RecyclerView personajeRecycler = (RecyclerView) inflater.inflate(R.layout.fragment_personaje, container, false);
+
+        //Snackbar al cargar la lista de personajes
+        personajeRecycler.post(() ->
+                Snackbar.make(personajeRecycler, R.string.snackBarWelcome, Snackbar.LENGTH_LONG).show()
+        );
 
         int[] nombrePersonajes = new int[Personaje.personajes.length];
         for (int i = 0; i < nombrePersonajes.length; i++) {
@@ -41,6 +50,11 @@ public class PersonajeFragment extends Fragment {
         personajeRecycler.setLayoutManager(layoutManager);
 
         adapter.setListener(position -> {
+            // Mostrar el Toast al seleccionar un personaje
+            String personajeSeleccionado = getString(Personaje.personajes[position].getNombre());
+            Toast.makeText(getActivity(),getString(R.string.toastCharSelected, personajeSeleccionado), Toast.LENGTH_SHORT).show();
+
+            // Navegar a los detalles del personaje
             Intent intent = new Intent(getActivity(), PersonajeDetalleActivity.class);
             intent.putExtra(PersonajeDetalleActivity.EXTRA_PERSONAJE_ID, position);
             getActivity().startActivity(intent);
